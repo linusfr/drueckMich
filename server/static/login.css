@@ -1,0 +1,47 @@
+#login {
+  display: flex;
+  flex-direction: row;
+  width: 70vw;
+  margin: 0 auto;
+  height: 100px;
+  padding-top: 50px;
+  justify-content: space-around;
+  align-self: center;
+}
+
+.messageContainer {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
+
+#infoMessage {
+  display: flex;
+  margin: 0 auto;
+}
+
+.userInput,
+userButtons {
+  display: flex;
+}
+
+.inputs {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-content: space-between;
+}
+
+input {
+  width: 200px;
+}
+
+.userButtons {
+  align-self: center;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+  height: 80px;
+}

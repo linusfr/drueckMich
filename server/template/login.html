@@ -1,0 +1,41 @@
+<!-- Enthält Navigationsleiste und Eingabefelder für Benutzername und Passwort gemeinsam mit Buttons zum Anmelden und registrieren -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Drück Mich</title>
+    <link rel="icon" href="img/favicon.ico" />
+    <link rel="stylesheet" type="text/css" href="header.css" />
+    <link rel="stylesheet" type="text/css" href="login.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Source+Sans+Pro"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div id="header">
+      <div id="headerTitle"><h1>Drück Mich</h1></div>
+    </div>
+    <form method="post" action="/client">
+      <div id="login">
+        <div class="userInput">
+          <div class="inputs">
+            <label>Name:</label> <input type="text" name="username" />
+            <label>Kennwort:</label> <input type="password" name="password" />
+          </div>
+        </div>
+        <div class="messageContainer"><div id="infoMessage">{{.}}</div></div>
+        <div class="userButtons">
+          <input
+            type="submit"
+            class="button"
+            name="register"
+            value="registrieren"
+          />
+          <div></div>
+          <input type="submit" class="button" name="login" value="anmelden" />
+      </div>
+    </form>
+  </body>
+</html>
+

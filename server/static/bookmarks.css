@@ -1,0 +1,105 @@
+.container {
+  width: 90vw;
+  margin: 0 auto;
+}
+
+button {
+  width: 40px;
+  height: auto;
+  background-color: darkgreen;
+  border: 0px;
+  padding-bottom: 5px;
+}
+
+button > img {
+  height: 20px;
+}
+
+.splitContainer {
+  width: 102px;
+  margin: 0 auto;
+}
+
+.splitChildren {
+  float: left;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  border: 1px solid black;
+  table-layout: fixed;
+}
+
+th {
+  background-color: darkgreen;
+  color: white;
+  height: 50px;
+  font-size: 25px;
+}
+
+td {
+  min-height: 100px;
+  height: 100%;
+  width: 100%;
+}
+
+td > img {
+  max-width: 80px;
+  height: auto;
+}
+
+td,
+th {
+  text-align: center;
+  padding: 8px;
+  border-bottom: 1px solid black;
+}
+
+tr:hover,
+tr:nth-child(even):hover {
+  background-color: green;
+}
+
+tr {
+  transition: all 0.5s;
+  background-color: #e6e6e6;
+}
+
+tr:nth-child(even) {
+  transition: all 0.5s;
+  background-color: #b9b9b9;
+}
+
+.iconColumn {
+  min-height: 100px;
+  width: 100px;
+}
+
+.nameColumn {
+  min-height: 100px;
+  min-width: 20vw;
+}
+
+.linkColumn,
+.deletionColumn {
+  min-height: 100px;
+  width: 100px;
+  vertical-align: middle;
+}
+
+i {
+  font-size: 60px;
+  color: black;
+  width: 50px;
+  margin-right: 10px;
+}
+
+.descriptionColumn {
+  min-height: 100px;
+  min-width: 25vw;
+}
+
+.makeClickable {
+  cursor: pointer;
+}

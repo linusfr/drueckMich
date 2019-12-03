@@ -1,0 +1,20 @@
+<!--
+  geht durch alle Lesezeichen durch und erstellt für jedes eine Reihe in der Tabelle und trägt die entsprechenden Werte ein
+-->
+{{range.}}
+<tr>
+  <td class="iconColumn">
+    <img class="tableIMG" src="{{.IconURL}}" alt="Icon" />
+  </td>
+  <td class="nameColumn">{{.Name}}</td>
+  <td class="linkColumn">
+    <a target="_blank" href="{{.URL}}">
+      <i class="fas fa-external-link-alt"></i
+    ></a>
+  </td>
+  <td class="descriptionColumn">{{.Description}}</td>
+  <td>
+    <span class="makeClickable"> <i class="fas fa-trash-alt"></i></span>
+  </td>
+</tr>
+{{ end }}

@@ -1,0 +1,83 @@
+<!-- Enthält Navigationsleiste und Elemente vom Client -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Drück Mich</title>
+    <link rel="icon" href="img/favicon.ico" />
+    <link rel="stylesheet" type="text/css" href="header.css" />
+    <link rel="stylesheet" type="text/css" href="client.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Source+Sans+Pro"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <div id="header">
+      <div id="backArrow"></div>
+      <div id="headerTitle"><h1>Drück Mich</h1></div>
+      <div id="username">{{.}}</div>
+    </div>
+    <div class="container">
+      <div class="elementContainer">
+        <a href="http://localhost:4242/bookmark">
+          <div class="element">
+            <div class="elementName">Lesezeichen</div>
+            <div class="elementIMG">
+              <img src="img/bookmarks.png" alt="Lesezeichen" />
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="elementContainer">
+        <a href="http://localhost:4242/categories">
+          <div class="element">
+            <div class="elementName">Kategorien</div>
+            <div class="elementIMG">
+              <img src="img/categories.png" alt="Kategorien" />
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="elementContainer">
+        <a href="http://localhost:4242/gps">
+          <div class="element">
+            <div class="elementName">GPS</div>
+            <div class="elementIMG"><img src="img/gps.png" alt="GPS" /></div>
+          </div>
+        </a>
+      </div>
+      <div class="elementContainer">
+        <a href="http://localhost:4242/import">
+          <div class="element">
+            <div class="elementName">Chrome Import</div>
+            <div class="elementIMG">
+              <img src="img/import.png" alt="Import" />
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="elementContainer">
+        <a href="http://localhost:4242/deleteAccount">
+          <div class="element">
+            <div class="elementName">Account Löschen</div>
+            <div class="elementIMG">
+              <img src="img/bin.png" alt="Löschen" />
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="elementContainer">
+        <a href="http://localhost:4242/signOut">
+          <div class="element">
+            <div class="elementName">Abmelden</div>
+            <div class="elementIMG">
+              <img src="img/signOut.png" alt="Abmelden" />
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </body>
+</html>

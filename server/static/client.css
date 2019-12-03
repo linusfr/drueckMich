@@ -1,0 +1,55 @@
+.container {
+  width: 80vw;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.elementContainer {
+  margin-bottom: 5vw;
+}
+
+.element:hover {
+  background-color: green;
+  transform: scale(1.1);
+}
+
+.element {
+  transition: all 0.5s;
+  width: 20vw;
+  border-style: groove;
+  border-color: darkgray;
+  font-weight: bold;
+  text-decoration: none;
+  color: black;
+}
+
+a:link {
+  text-decoration: none;
+  color: black;
+}
+a:hover {
+  font-size: 50px;
+}
+
+.elementName {
+  transition: all 0.5s;
+  padding-top: 10px;
+  font-size: 30px;
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+.elementIMG {
+  margin: 0 auto;
+  padding-bottom: 20px;
+}
+
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 60%;
+}

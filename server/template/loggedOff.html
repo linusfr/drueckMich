@@ -1,0 +1,38 @@
+<!--
+  enthält Navigationsleiste und enthält Div in der Nachrichten ausgegeben werden können
+-->
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Drück Mich</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Source+Sans+Pro"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="header.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="screen"
+      href="loggedOff.css"
+    />
+    <link rel="icon" href="img/favicon.ico" />
+  </head>
+  <body>
+    <div id="header">
+      <a id="backArrowContainer" href="http://localhost:4242/client">
+        <div id="backArrow">
+          <img
+            id="backArrowImg"
+            src="img/backArrow.png"
+            alt="back to the Menu"
+          />
+        </div>
+      </a>
+      <div id="headerTitle"><h1>Drück Mich</h1></div>
+      <div></div>
+    </div>
+    <div class="container">{{.}}</div>
+  </body>
+</html>

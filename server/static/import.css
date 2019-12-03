@@ -1,0 +1,28 @@
+.container {
+  display: flex;
+  align-content: center;
+  flex-direction: column;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.form {
+  display: flex;
+  margin: 0 auto;
+}
+
+fieldset {
+  margin-top: 100px;
+  border: 0px;
+}
+
+input {
+  font-size: 15px;
+}
+
+.output {
+  padding-top: 50px;
+  display: flex;
+  font-size: 30px;
+  margin: 0 auto;
+}

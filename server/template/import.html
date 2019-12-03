@@ -1,0 +1,50 @@
+<!--
+  enthält Navigationsleiste und input Element zum hochladen von HTML Dateien für Chrome Exports
+-->
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Drück Mich</title>
+    <link rel="icon" href="img/favicon.ico" />
+    <link rel="stylesheet" type="text/css" href="header.css" />
+    <link rel="stylesheet" type="text/css" href="import.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Source+Sans+Pro"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <div id="header">
+      <a id="backArrowContainer" href="http://localhost:4242/client">
+        <div id="backArrow">
+          <img
+            id="backArrowImg"
+            src="img/backArrow.png"
+            alt="back to the Menu"
+          />
+        </div>
+      </a>
+      <div id="headerTitle"><h1>Drück Mich</h1></div>
+      <div id="username">{{.Name}}</div>
+    </div>
+
+    <div class="container">
+      <div class="form">
+        <form method="post" action="/import" enctype="multipart/form-data">
+          <fieldset>
+            <input
+              type="file"
+              name="bookmarkFile"
+              id="bookmarkFile"
+              accept=".html"
+            />
+            <input type="submit" name="submit" value="importieren" />
+          </fieldset>
+        </form>
+      </div>
+      <div class="output">{{.Output}}</div>
+    </div>
+  </body>
+</html>
